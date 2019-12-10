@@ -1,0 +1,650 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #eef3f9;
+    font-family: 'Roboto', sans-serif;
+    color: darkslategray;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    color: #6aadf1;
+    text-decoration: none;
+}
+
+header {
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu a {
+    color: darkslategray;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.header-btns__busket {
+    border: 0;
+    background: 0;
+}
+
+.busket__img,
+.search__img,
+._theme-btn-look-img {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+/*Стили для главной*/
+
+.main-head .card-basket .card-busket__btn {
+    position: absolute;
+    top: 210px;
+    left: 55px;
+}
+
+._theme-btn-white {
+    background-color: white;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-title__h1 {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.main-title__description {
+    font-size: 12px;
+
+}
+
+.main-select {
+    margin-bottom: 30px;
+}
+
+.card-slider {
+    margin-left: 10px;
+}
+
+.discounts-information {
+    background-color: #eef3f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    height: 180px;
+    margin: 80px 0;
+}
+
+.recipes {
+    margin: 0 auto;
+}
+
+.recipe-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-card {
+    display: block;
+    height: 322px;
+    margin-bottom: 15px;
+}
+
+.recipe-card__img {
+    width: 310px;
+    height: 210px;
+    border-radius: 5px;
+}
+
+.recipe-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-card-text {
+    display: flex;
+    align-items: center;
+}
+
+.recipe-card__h3 {
+    max-width: 240px;
+    margin: 0;
+}
+
+.client {
+    background-image: url(../img/abstract.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.client-card {
+    height: 450px;
+    padding: 50px 0 0 0;
+}
+
+.client-card-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.client-card-example {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    align-items: center;
+    background-color: #eef3f9;
+    padding-bottom: 40px;
+}
+
+.client-text {
+    display: flex;
+}
+
+.client-button {
+    position: relative;
+}
+
+.client-button__btn {
+    border-top: solid 5px white;
+    position: absolute;
+    right: -52px;
+    bottom: -55px;
+}
+
+.client-description {
+    text-align: center;
+}
+
+.client-questions {
+    position: relative;
+    display: flex;
+    height: 337px;
+}
+
+.questions-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.questions-input {
+    background-color: white;
+    color: darkgrey;
+    border: 0;
+    border-radius: 3px;
+    padding: 22px;
+    width: 222px;
+}
+
+.questions-img__img {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    height: 380px;
+    width: 220px;
+    bottom: 1px;
+}
+
+.audio {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    background: 0;
+    z-index: 10000;
+}
+
+.audio audio {
+    width: 100%;
+}
+
+/*Заканчиваются стили для главной*/
+
+
+.products-select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.products-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products-selection__btn {
+    margin: 7px;
+    background-color: white;
+    color: lightslategray;
+}
+
+._theme-btn {
+    background-color: #6aadf1;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 14px;
+}
+
+.products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 196px;
+    margin-bottom: 2.2em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-tags {
+    margin: 10px 0;
+}
+
+.card-tags__discount {
+    background-color: #fd8b4d;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 3px;
+}
+
+.card-tags__popular {
+    background-color: #6aadf1;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 3px;
+}
+
+.card-img {
+    height: 100px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.card-img img {
+    height: 100px;
+    width: 150px;
+}
+
+.card-description {
+    text-align: center;
+}
+
+.card-name {
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.card-cost {
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.busket {
+    cursor: pointer;
+}
+
+.busket:hover {
+    background-color: #6aadf1;
+}
+
+.card-busket__btn {
+    position: absolute;
+    top: 193px;
+    left: 70px;
+    background-color: white;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.discounts {
+    background-image: url(../img/discounts.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.discounts-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.discounts-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discounts-title-button__btn,
+.history-header__btn ._theme-btn-blue {
+    background-color: #6aadf1;
+    color: white;
+}
+
+.discounts-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.discounts-cards1,
+.discounts-cards2,
+.discounts-cards3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.discounts-cards2,
+.discounts-cards3 {
+    margin-left: 20px;
+}
+
+.discount-card {
+    display: flex;
+    border: solid 2px #eef2f5;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+hr {
+    width: 20px;
+    align-self: flex-start;
+}
+
+.discount-card-big {
+    background-color: #eef3f9;
+    flex-direction: column;
+}
+
+.discount-card__img {
+    height: 100px;
+    width: 100px;
+}
+
+#img-popular {
+    height: 150px;
+    width: 260px;
+}
+
+.discount-card-text__title {
+    font-weight: bold;
+}
+
+.discount-card-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+._theme-section-btn-look {
+    margin: 0 auto;
+}
+
+._theme-btn-look {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #8ad377;
+    border: 0;
+    border-radius: 20px;
+    padding: 14px;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+}
+
+.history {
+    width: 1148px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.history-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 240px;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.multiple-item {
+    background-color: #fff;
+    margin-right: 1em;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.slider-fruits {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* Тут начинаются стили для карточки товара */
+
+.card {
+    margin-bottom: 100px;
+}
+
+.card_main {
+    margin: 100px 0 65px;
+}
+
+.card_image {
+    text-align: center;
+}
+
+.card_image img {
+    width: 550px;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_text_title {
+    text-align: center;
+}
+
+.card_text_info_bold {
+    font-weight: bold;
+}
+
+.card_sideinfo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_sideinfo_price {
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+
+.card_sideinfo_price_first {
+    text-decoration: line-through;
+}
+
+.card_sideinfo_buttons {
+    display: flex;
+    width: 300px;
+}
+
+.card_sideinfo_buttons form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card_advantages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_sidebar_advantage {
+    display: flex;
+}
+
+.card_sidebar_advantage img {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.card_sidebar_advantage_text {
+    align-self: center;
+    margin-left: 0.5em;
+}
+
+.card_text,
+.card_sideinfo {
+    margin-bottom: 1em;
+}
+
+.video_content {
+    text-align: center;
+}
+
+
+/* Тут заканчиваются стили для карточки товара */
+
+
+footer {
+    background-color: #fff;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-assortiment {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    .history {
+        width: 1080px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .history {
+        width: 840px;
+    }
+
+    .questions-img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .history {
+        width: 660px;
+    }
+
+    .questions-img {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        width: auto;
+    }
+
+    .history {
+        width: auto;
+    }
+
+    .questions-img {
+        display: none;
+    }
+}
