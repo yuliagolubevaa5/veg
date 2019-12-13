@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../slider/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="../slider/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/fonts/Proxima%20Nova.ttf">
 
 
     <script type="text/javascript" src="../js/jquery/jquery-3.4.1.min.js"></script>
@@ -20,10 +21,9 @@
 <body>
     <header>
         <div class="container">
-            <div class="header-logo logo">
-                <a href="../index.html">
-                    <img src="../img/logo2.jpg" alt="" class="logo__img">
-                </a>
+            <div class="logo">
+                <a href="../index.html" class="logo__a">vegetarian</a>
+                <a href="../index.html"><button class="logo__btn">food</button></a>
             </div>
             <nav class="header-menu">
                 <a href="../products/index.html">Продукты</a>
@@ -110,9 +110,8 @@
             <article class="footer-block">
                 <section class="footer-geo">
                     <div class="logo">
-                        <a href="../index.html">
-                            <img src="../img/logo.jpg" alt="" class="logo__img">
-                        </a>
+                        <a href="../index.html" class="logo__a">vegetarian</a>
+                        <a href="../index.html"><button class="logo__btn">food</button></a>
                     </div>
                     <p class="footer-geo__text">Наши магазины</p>
                     <input type="text" class="footer-geo__town" value="Минск">
@@ -122,15 +121,25 @@
                     </div>
                 </section>
                 <section class="footer-assortiment">
-                    <a href="" class="footer-assortiment__a">Фрукты</a>
-                    <a href="" class="footer-assortiment__a">Овощи</a>
-                    <a href="" class="footer-assortiment__a">Напитки</a>
-                    <a href="" class="footer-assortiment__a">Злаки</a>
-                    <a href="" class="footer-assortiment__a">Масла</a>
-                    <a href="" class="footer-assortiment__a">Специи</a>
+                    <div class="footer-assortiment1">
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Фрукты</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Овощи</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Напитки</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Злаки</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Масла</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Специи</a>
+                    </div>
+                    <div class="footer-assortiment2">
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Клиентам</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Доставка</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Оплата</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Отзывы</a>
+                        <a href="" class="footer-assortiment__a _theme-footer-text">Контакты</a>
+                    </div>
+
                 </section>
                 <section class="footer-contacts1">
-                    <p>Свяжитесь с нами</p>
+                    <p class="_theme-light-p footer-contacts1__text">Свяжитесь с нами</p>
                     <p class="footer-contacts1__number">+375 (29) 804-83-97</p>
                     <a href="">КОНТАКТНЫЙ ЦЕНТР</a>
                     <p class="footer-contacts1__number">+375 (29) 111-12-34</p>
@@ -138,17 +147,25 @@
                 </section>
                 <section class="footer-contacts2">
                     <div class="contacts-icons">
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <i>
+                            <img src="../img/youtube.png" alt="" class="contacts-icons__youtube contacts-icons__img">
+                        </i>
+                        <i>
+                            <img src="../img/facebook.png" alt="" class="contacts-icons__facebook contacts-icons__img">
+                        </i>
+                        <i>
+                            <img src="../img/vk.png" alt="" class="contacts-icons__vk contacts-icons__img">
+                        </i>
                     </div>
-                    <p>Теперь мы ближе!<br>Находите нас в соцсетях</p>
+                    <p class="_theme-light-p footer-contacts2__text">Теперь мы ближе!<br>Находите нас в соцсетях</p>
                     <div class="contacts-mail">
                         <i></i>
-                        <a href="">mail@vagetarian.ru</a>
+                        <a class="contacts-mail__a" href="">mail@vegetarian.ru</a>
                     </div>
                 </section>
             </article>
         </div>
     </footer>
-</body></html>
+</body>
+
+</html>
