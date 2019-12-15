@@ -19,22 +19,32 @@ body {
 }
 
 a {
-    /*    color: #6aadf1;*/
     text-decoration: none;
     cursor: pointer;
 }
-._theme-title{
+
+._theme-title {
     color: #303030;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 0;
 }
-._theme-description{
+
+._theme-description {
     color: #6aadf1;
     font-weight: 700;
     font-size: 11px;
     letter-spacing: 3px;
 }
+
+._theme-text-dark {
+    color: #303030;
+}
+
+._theme-a-blue {
+    color: #6aadf1;
+}
+
 header {
     margin: 2em 0;
     display: flex;
@@ -132,7 +142,6 @@ header .container {
 .discounts-information {
     background-color: #eef3f9;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-radius: 15px;
     height: 180px;
@@ -145,8 +154,18 @@ header .container {
 }
 
 .discounts-information-img__img1 {
+    transform: scale(-1, 1);
     width: 150px;
     height: 180px;
+}
+
+.discounts-information__p {
+    font-size: 14px;
+    margin: 20px;
+}
+
+.main-information {
+    margin: 0 60px;
 }
 
 .discounts-information-img__img2 {
@@ -154,13 +173,15 @@ header .container {
     width: 200px;
     height: 250px;
     bottom: -114px;
-    left: -195px;
+    left: -47px;
 }
 
 .recipes {
     margin: 0 auto;
 }
-
+.recipe{
+    margin: 60px 0 60px 0;
+}
 .recipe-head {
     display: flex;
     justify-content: space-between;
@@ -194,12 +215,29 @@ header .container {
 
 .recipe-card-text {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
-
+.recipe-category{
+    display: flex;
+    align-items: baseline;
+}
+.recipe-card__like{
+    background: 0;
+    border: solid 1px grey;
+    padding: 10px 10px 5px 10px;
+    border-radius: 50%;
+}
+.recipe-card__like-img{
+    width: 15px;
+    height: 15px;
+}
 .recipe-card__h3 {
     max-width: 240px;
     margin: 0;
+    font-weight: normal;
 }
 
 .client {
@@ -220,17 +258,54 @@ header .container {
 }
 
 .client-card-example {
+    position: relative;
     width: 460px;
     display: flex;
     flex-direction: column;
-    border-radius: 7px;
+    border-radius: 12px;
     align-items: center;
     background-color: #eef3f9;
     padding-bottom: 40px;
 }
+.client-card-example__fruit3{
+    position: absolute;
+    height: 150px;
+    width: 250px;
+    transform: rotate(323deg);
+    left: -100px;
+    top: -20px;
+}
+.client__hr {
+    margin-top: 5%;
+    background-color: #65b0f3;
+    border: 0;
+    width: 50px;
+    height: 2px;
+}
 
 .client-text {
     display: flex;
+    align-items: center;
+}
+
+.client-text__p {
+    text-align: end;
+}
+
+.client-text__price {
+    display: flex;
+    align-items: baseline;
+}
+
+.client-text__cost {
+    color: #65b0f3;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.client-text__rub {
+    color: #65b0f3;
+    margin-left: 5px;
 }
 
 .client-button {
@@ -248,6 +323,10 @@ header .container {
     text-align: center;
 }
 
+.client-description__p {
+    margin-top: 0;
+}
+
 .client-questions {
     position: relative;
     display: flex;
@@ -260,16 +339,27 @@ header .container {
     justify-content: center;
     margin-right: 100px;
 }
-
+.questions-left__title{
+    margin: 0;
+}
 .questions-input {
     background-color: white;
     color: darkgrey;
     border: 0;
     border-radius: 3px;
-    padding: 22px;
+    padding: 17px;
     width: 222px;
+    margin-right: 20px;
 }
-
+.questions-input::placeholder{
+    color: #B0B0B0;
+}
+.send-questions{
+    padding: 17px;
+    border: 0;
+    border-radius: 3px;
+    font-weight: bold;
+}
 .questions-img__img {
     display: block;
     position: absolute;
@@ -429,7 +519,8 @@ header .container {
 }
 
 .discounts-title-button__btn,
-.history-header__btn ._theme-btn-blue {
+.history-header__btn,
+._theme-btn-blue {
     background-color: #6aadf1;
     color: white;
 }
@@ -455,17 +546,34 @@ header .container {
 
 .discount-card {
     display: flex;
+    width: 300px;
+    justify-content: space-around;
     border: solid 2px #eef2f5;
     border-radius: 10px;
     background-color: #fff;
     margin-top: 20px;
 }
 
-hr {
+.discount-card-description__hr {
     width: 20px;
     align-self: flex-start;
 }
-
+.discount-card-text{
+    display: flex;
+    justify-content: space-between;
+}
+.discount-card-prices__price1{
+    margin: 0;
+    font-size: 14px;
+    color: indianred;
+}
+.price2{
+    display: flex;
+    font-size: 14px;
+}
+.price2__price2{
+    color: black;
+}
 .discount-card-big {
     background-color: #eef3f9;
     flex-direction: column;
@@ -482,7 +590,7 @@ hr {
 }
 
 .discount-card-text__title {
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .discount-card-btn {
@@ -698,7 +806,6 @@ footer {
 }
 
 ._theme-light-p {
-    font-size: 16px;
     color: #B0B0B0;
 }
 
@@ -734,7 +841,7 @@ footer {
         width: 840px;
     }
 
-    .questions-img {
+    .unvisible {
         display: none;
     }
 }
@@ -748,7 +855,7 @@ footer {
         width: 660px;
     }
 
-    .questions-img {
+    .unvisible {
         display: none;
     }
 }
@@ -762,7 +869,7 @@ footer {
         width: auto;
     }
 
-    .questions-img {
+    .unvisible {
         display: none;
     }
 }
