@@ -23,6 +23,10 @@ a {
     cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+}
+
 ._theme-title {
     color: #303030;
     font-size: 22px;
@@ -43,6 +47,44 @@ a {
 
 ._theme-a-blue {
     color: #6aadf1;
+}
+
+._theme-light-p {
+    color: #B0B0B0;
+}
+
+._theme-btn {
+    background-color: #6aadf1;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    padding: 14px;
+}
+
+._theme-btn-white {
+    background-color: white;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+._theme-section-btn-look {
+    margin: 0 auto;
+}
+
+._theme-btn-look {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #8ad377;
+    border: 0;
+    border-radius: 20px;
+    padding: 14px;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
 }
 
 header {
@@ -79,7 +121,6 @@ header .container {
     position: absolute;
     bottom: -11px;
     left: 103px;
-    cursor: pointer;
 }
 
 .header-menu a {
@@ -102,21 +143,13 @@ header .container {
     margin: 0 auto;
 }
 
+
 /*Стили для главной*/
 
 .main-head .card-basket .card-busket__btn {
     position: absolute;
     top: 210px;
     left: 55px;
-}
-
-._theme-btn-white {
-    background-color: white;
-    border: 0;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
 }
 
 .main-title {
@@ -179,9 +212,11 @@ header .container {
 .recipes {
     margin: 0 auto;
 }
-.recipe{
+
+.recipe {
     margin: 60px 0 60px 0;
 }
+
 .recipe-head {
     display: flex;
     justify-content: space-between;
@@ -220,20 +255,24 @@ header .container {
     font-size: 12px;
     font-weight: bold;
 }
-.recipe-category{
+
+.recipe-category {
     display: flex;
     align-items: baseline;
 }
-.recipe-card__like{
+
+.recipe-card__like {
     background: 0;
     border: solid 1px grey;
     padding: 10px 10px 5px 10px;
     border-radius: 50%;
 }
-.recipe-card__like-img{
+
+.recipe-card__like-img {
     width: 15px;
     height: 15px;
 }
+
 .recipe-card__h3 {
     max-width: 240px;
     margin: 0;
@@ -267,14 +306,7 @@ header .container {
     background-color: #eef3f9;
     padding-bottom: 40px;
 }
-.client-card-example__fruit3{
-    position: absolute;
-    height: 150px;
-    width: 250px;
-    transform: rotate(323deg);
-    left: -100px;
-    top: -20px;
-}
+
 .client__hr {
     margin-top: 5%;
     background-color: #65b0f3;
@@ -339,9 +371,11 @@ header .container {
     justify-content: center;
     margin-right: 100px;
 }
-.questions-left__title{
+
+.questions-left__title {
     margin: 0;
 }
+
 .questions-input {
     background-color: white;
     color: darkgrey;
@@ -351,15 +385,18 @@ header .container {
     width: 222px;
     margin-right: 20px;
 }
-.questions-input::placeholder{
+
+.questions-input::placeholder {
     color: #B0B0B0;
 }
-.send-questions{
+
+.send-questions {
     padding: 17px;
     border: 0;
     border-radius: 3px;
     font-weight: bold;
 }
+
 .questions-img__img {
     display: block;
     position: absolute;
@@ -383,8 +420,21 @@ header .container {
     width: 100%;
 }
 
+
 /*Заканчиваются стили для главной*/
 
+.crumbs {
+    display: flex;
+    align-items: center;
+}
+
+.crumb {
+    margin: 0 10px;
+}
+
+.crumb:first-child {
+    margin: 0 10px 0 0;
+}
 
 .products-select {
     display: flex;
@@ -405,14 +455,9 @@ header .container {
     color: lightslategray;
 }
 
-._theme-btn {
+.products-selection__btn:hover {
     background-color: #6aadf1;
     color: white;
-    font-weight: bold;
-    border: 0;
-    border-radius: 20px;
-    cursor: pointer;
-    padding: 14px;
 }
 
 .products-cards {
@@ -431,7 +476,6 @@ header .container {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .card-tags {
@@ -461,8 +505,13 @@ header .container {
 }
 
 .card-img img {
-    height: 100px;
-    width: 150px;
+    height: 112px;
+    width: 134px;
+}
+
+#card-orange__img {
+    height: 80px;
+    width: 134px;
 }
 
 .card-description {
@@ -481,7 +530,7 @@ header .container {
 }
 
 .busket {
-    cursor: pointer;
+    border: solid 1px lightgrey;
 }
 
 .busket:hover {
@@ -497,6 +546,41 @@ header .container {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 70px 0;
+}
+
+.pagination__btn {
+    border: 0;
+    background: 0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+}
+
+.pagination__a {
+    color: #303030;
+}
+
+.pagination__btn:hover {
+    background-color: #8ad377;
+}
+
+.pagination__btn:hover>.pagination__a {
+    color: white;
+}
+
+#active {
+    background-color: #8ad377;
+}
+
+#active>.pagination__a {
+    color: white;
 }
 
 .discounts {
@@ -558,22 +642,27 @@ header .container {
     width: 20px;
     align-self: flex-start;
 }
-.discount-card-text{
+
+.discount-card-text {
     display: flex;
     justify-content: space-between;
 }
-.discount-card-prices__price1{
+
+.discount-card-prices__price1 {
     margin: 0;
     font-size: 14px;
     color: indianred;
 }
-.price2{
+
+.price2 {
     display: flex;
     font-size: 14px;
 }
-.price2__price2{
+
+.price2__price2 {
     color: black;
 }
+
 .discount-card-big {
     background-color: #eef3f9;
     flex-direction: column;
@@ -582,6 +671,10 @@ header .container {
 .discount-card__img {
     height: 100px;
     width: 100px;
+}
+
+.discounts-button__btn {
+    margin-bottom: 70px;
 }
 
 #img-popular {
@@ -597,24 +690,6 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
-}
-
-._theme-section-btn-look {
-    margin: 0 auto;
-}
-
-._theme-btn-look {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #8ad377;
-    border: 0;
-    border-radius: 20px;
-    padding: 14px;
-    margin: 0 auto;
-    color: white;
-    font-weight: bold;
 }
 
 .history {
@@ -641,13 +716,26 @@ header .container {
     margin-right: 1em;
     border-radius: 15px;
     padding: 10px;
+    cursor: pointer;
 }
+
+.multiple-item:hover {
+    background-image: url(../img/abstract.png);
+}
+
+
+/*
+.multiple-item:hover > .slider-fruits{
+    display: none;
+}
+*/
 
 .slider-fruits {
     width: 80px;
     height: 80px;
     margin: 0 auto;
 }
+
 
 /* Тут начинаются стили для карточки товара */
 
@@ -739,7 +827,6 @@ header .container {
 
 /* Тут заканчиваются стили для карточки товара */
 
-
 footer {
     background-color: #fff;
 }
@@ -777,6 +864,7 @@ footer {
     border: 0;
     border-radius: 20px;
     padding: 13px 0 13px 22px;
+    color: #B0B0B0;
 }
 
 .footer-contacts1__number {
@@ -788,6 +876,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contacts-icons__btn {
+    background: 0;
+    border: 0;
 }
 
 .contacts-icons__youtube {
@@ -803,10 +896,6 @@ footer {
 .contacts-icons__vk {
     width: 50px;
     height: 50px;
-}
-
-._theme-light-p {
-    color: #B0B0B0;
 }
 
 .footer-contacts2 p {
@@ -826,7 +915,6 @@ footer {
     .container {
         width: 960px;
     }
-
     .history {
         width: 1080px;
     }
@@ -836,11 +924,9 @@ footer {
     .container {
         width: 720px;
     }
-
     .history {
         width: 840px;
     }
-
     .unvisible {
         display: none;
     }
@@ -850,11 +936,9 @@ footer {
     .container {
         width: 540px;
     }
-
     .history {
         width: 660px;
     }
-
     .unvisible {
         display: none;
     }
@@ -864,12 +948,16 @@ footer {
     .container {
         width: auto;
     }
-
     .history {
         width: auto;
     }
-
     .unvisible {
         display: none;
     }
+}
+
+.main-slider .slick-current,
+.multiple-items .slick-current {
+    opacity: 0.5;
+    transition: 0.5s opacity linear;
 }
