@@ -27,6 +27,17 @@ button {
     cursor: pointer;
 }
 
+button:active, 
+button:focus,
+a:active, 
+a:focus,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus{
+  outline: none;
+}
+
 ._theme-title {
     color: #303030;
     font-size: 22px;
@@ -49,6 +60,10 @@ button {
     color: #6aadf1;
 }
 
+._theme-a-blue:hover{
+    text-decoration: underline;
+}
+
 ._theme-light-p {
     color: #B0B0B0;
 }
@@ -60,6 +75,9 @@ button {
     border: 0;
     border-radius: 20px;
     padding: 14px;
+}
+._theme-btn:hover{
+    transform: scale(1.05);
 }
 
 ._theme-btn-white {
@@ -85,6 +103,10 @@ button {
     margin: 0 auto;
     color: white;
     font-weight: bold;
+}
+
+._theme-btn-look:hover{
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.6);
 }
 
 header {
@@ -148,7 +170,7 @@ header .container {
 
 .main-head .card-basket .card-busket__btn {
     position: absolute;
-    top: 210px;
+    top: 155px;
     left: 55px;
 }
 
@@ -235,6 +257,10 @@ header .container {
     border-radius: 5px;
 }
 
+.recipe-card__img:hover{
+    opacity: 0.8;
+}
+
 .recipe-body {
     display: flex;
     flex-direction: column;
@@ -266,6 +292,11 @@ header .container {
     border: solid 1px grey;
     padding: 10px 10px 5px 10px;
     border-radius: 50%;
+}
+
+.recipe-card__like:hover .recipe-card__like-img{
+    width: 17px;
+    height: 17px;
 }
 
 .recipe-card__like-img {
@@ -345,7 +376,6 @@ header .container {
 }
 
 .client-button__btn {
-    border-top: solid 5px white;
     position: absolute;
     right: -52px;
     bottom: -55px;
@@ -384,6 +414,10 @@ header .container {
     padding: 17px;
     width: 222px;
     margin-right: 20px;
+}
+
+.questions-input:hover{
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.4);
 }
 
 .questions-input::placeholder {
@@ -439,23 +473,31 @@ header .container {
 .products-select {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     margin-bottom: 1em;
 }
 
 .products-selection {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
+.main-selection products-selection__li{
+    background-color: #6aadf1;
+    color: white;
+} 
 
-.products-selection__btn {
+.products-selection__li {
     margin: 7px;
     background-color: white;
     color: lightslategray;
+    list-style: none;
+    cursor: pointer;
+    font-size: 13px;
 }
 
-.products-selection__btn:hover {
+.products-selection__li:hover {
     background-color: #6aadf1;
     color: white;
 }
@@ -478,6 +520,9 @@ header .container {
     align-items: center;
 }
 
+.product-card:hover{
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.6);
+}
 .card-tags {
     margin: 10px 0;
 }
@@ -488,6 +533,7 @@ header .container {
     font-weight: bold;
     border: 0;
     border-radius: 3px;
+    padding: 2px;
 }
 
 .card-tags__popular {
@@ -496,6 +542,7 @@ header .container {
     font-weight: bold;
     border: 0;
     border-radius: 3px;
+    padding: 2px;
 }
 
 .card-img {
@@ -571,7 +618,7 @@ header .container {
     background-color: #8ad377;
 }
 
-.pagination__btn:hover>.pagination__a {
+.pagination__btn:hover > .pagination__a {
     color: white;
 }
 
@@ -579,7 +626,7 @@ header .container {
     background-color: #8ad377;
 }
 
-#active>.pagination__a {
+#active > .pagination__a {
     color: white;
 }
 
@@ -607,6 +654,7 @@ header .container {
 ._theme-btn-blue {
     background-color: #6aadf1;
     color: white;
+    cursor: pointer;
 }
 
 .discounts-body {
@@ -630,7 +678,9 @@ header .container {
 
 .discount-card {
     display: flex;
-    width: 300px;
+    width: 270px;
+    height: 114px;
+    padding: 10px 15px;
     justify-content: space-around;
     border: solid 2px #eef2f5;
     border-radius: 10px;
@@ -638,14 +688,34 @@ header .container {
     margin-top: 20px;
 }
 
+.discount-card:hover{
+     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.6);
+}
+
+.discount-card-body{
+    align-self: flex-end
+}
+
+.discount-card .card-tags{
+    position: absolute;
+}
+
 .discount-card-description__hr {
     width: 20px;
     align-self: flex-start;
 }
 
+.discount-card-description__title{
+    margin-top: 0;
+}
+
 .discount-card-text {
     display: flex;
     justify-content: space-between;
+}
+
+.discount-card-prices{
+    margin-right: 15px;
 }
 
 .discount-card-prices__price1 {
@@ -666,12 +736,20 @@ header .container {
 .discount-card-big {
     background-color: #eef3f9;
     flex-direction: column;
+    position: relative;
+    height: 272px;
 }
 
 .discount-card__img {
     height: 100px;
     width: 100px;
 }
+
+/*
+.discount-card__btn{
+    margin: 0 15px 10px;
+}
+*/
 
 .discounts-button__btn {
     margin-bottom: 70px;
@@ -848,6 +926,7 @@ footer {
 .footer-assortiment2 {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 ._theme-footer-text {
@@ -855,7 +934,8 @@ footer {
     font-weight: bold;
 }
 
-.footer-assortiment__a {
+.footer-assortiment__li {
+    list-style: none;
     margin: 10px;
 }
 
@@ -867,9 +947,24 @@ footer {
     color: #B0B0B0;
 }
 
+.footer-contacts1__text {
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-geo__ul{
+    padding: 0;
+}
+
+.footer-geo__li,
+.footer-contacts1__li,
+.footer-contacts2__li {
+    list-style: none;
+}
+
 .footer-contacts1__number {
     color: black;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .contacts-icons {
@@ -915,6 +1010,7 @@ footer {
     .container {
         width: 960px;
     }
+
     .history {
         width: 1080px;
     }
@@ -924,11 +1020,25 @@ footer {
     .container {
         width: 720px;
     }
+
     .history {
         width: 840px;
     }
+
     .unvisible {
         display: none;
+    }
+
+    .products-selection {
+        justify-content: flex-start;
+    }
+
+    .products-cards {
+        justify-content: flex-start;
+    }
+
+    .products-cards .product-card {
+        margin-right: 1em;
     }
 }
 
@@ -936,11 +1046,17 @@ footer {
     .container {
         width: 540px;
     }
+
     .history {
         width: 660px;
     }
+
     .unvisible {
         display: none;
+    }
+
+    .products-selection {
+        justify-content: flex-start;
     }
 }
 
@@ -948,11 +1064,17 @@ footer {
     .container {
         width: auto;
     }
+
     .history {
         width: auto;
     }
+
     .unvisible {
         display: none;
+    }
+
+    .products-selection {
+        justify-content: flex-start;
     }
 }
 
